@@ -54,6 +54,21 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .sw-promotion-control {
+    display: block;
+    height: 23px;
+  }
+  .sw-promotion-pg {
+    margin-top: 100px;
+    width: 100px;
+  }
+  .swiper-pagination-bullet {
+    background-color: blue;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: red;
+  }
 }
 
 @media screen and (max-width: 480px) {

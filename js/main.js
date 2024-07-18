@@ -29,9 +29,9 @@ window.onload = function () {
 
   // 쇼핑에 스와이퍼 기능 적용
   const swShopping = new Swiper(".sw-shopping", {
-    slidesPerView: 3,
+    slidesPerView: 1.5,
     grid: {
-      rows: 3,
+      rows: 1,
       fill: "row",
     },
     spaceBetween: 10,
@@ -60,5 +60,93 @@ window.onload = function () {
         },
       },
     },
+    navigation: {
+      nextEl: ".shopping .sw-next",
+      prevEl: ".shopping .sw-prev",
+    },
+    loop: true,
+  });
+
+  // 투어의 스와이퍼 기능적용
+  const swTour = new Swiper(".sw-tour", {
+    // 모바일버전
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    breakpoints: {
+      480: {
+        spaceBetween: 32,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        grid: {
+          rows: 1,
+        },
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+        slidesPerGroup: 2,
+        grid: {
+          rows: 1,
+        },
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        grid: {
+          rows: 1,
+        },
+      },
+      navigation: {
+        nextEl: ".shopping .sw-next",
+        prevEl: ".shopping .sw-prev",
+      },
+      loop: true,
+    },
+  });
+  // 티켓 스와이퍼 기능 적용
+  const swTicket = new Swiper(".sw-ticket", {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: ".ticket .sw-next",
+      prevEl: ".ticket .sw-prev",
+    },
+    breakpoints: {
+      480: {
+        spaceBetween: 32,
+        slidesPerView: 2,
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 3,
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 4,
+      },
+    },
+  });
+  const swLive = new Swiper(".sw-live", {
+    navigation: {
+      nextEl: ".live .sw-next",
+      prevEl: ".live .sw-prev",
+    },
+    slidesPerView: 1.5,
+    spaceBetween: 27,
+    breakpoints: {
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: { slidesPerView: 2, spaceBetween: 20 },
+    },
+
+    loop: true,
   });
 };

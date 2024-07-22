@@ -180,4 +180,5 @@ window.onload = function () {
       },
     },
   });
+  const swEvent = new Swiper(".sw-event", {});
 };

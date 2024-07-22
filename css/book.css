@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.book-link {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.book-link img {
+  width: 100%;
+}

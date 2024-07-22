@@ -149,4 +149,9 @@ window.onload = function () {
 
     loop: true,
   });
+
+  const swbook = new Swiper(".sw-book", {
+    slidesPerView: 3,
+    spaceBetween: 27,
+  });
 };

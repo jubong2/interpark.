@@ -150,8 +150,34 @@ window.onload = function () {
     loop: true,
   });
 
-  const swbook = new Swiper(".sw-book", {
-    slidesPerView: 3,
-    spaceBetween: 27,
+  const swbook = new Swiper(".sw-books", {
+    navigation: {
+      nextEl: ".books .sw-next",
+      prevEl: ".books .sw-prev",
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      480: {
+        spaceBetween: 32,
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 30,
+        grid: {
+          rows: 1,
+        },
+      },
+      1280: {
+        slidesPerView: 4,
+        slidesPerGroup: 5,
+        spaceBetween: 27,
+        grid: {
+          rows: 1,
+        },
+      },
+    },
   });
 };

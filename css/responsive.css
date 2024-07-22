@@ -81,6 +81,9 @@
   html {
     font-size: 8px;
   }
+  .books-img img {
+    height: auto;
+  }
 }
 @media screen and (max-width: 680px) {
   .live .section-slide {

@@ -1,4 +1,15 @@
 window.onload = function () {
+  const topBtn = document.querySelector("#gotop");
+  topBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (window.scrollY !== 0) {
+      // 현재 스크롤 위치가 0이 아니면 top으로 스크롤
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  });
   // 상단의 마이페이지리스트 기능
   const mypageBt = document.querySelector(".mypage-bt");
   const mypageList = document.querySelector(".mypage-list");
@@ -180,21 +191,17 @@ window.onload = function () {
       },
     },
   });
-  const swEvent = new Swiper(".sw-event", {
+  const swEvent = new Swiper(".sw-events", {
     navigation: {
       nextEl: ".event .sw-next",
       prevEl: ".event .sw-prev",
     },
-    slidesPerView: 1.5,
+    slidesPerView: 3,
     spaceBetween: 27,
     breakpoints: {
       1280: {
         slidesPerView: 4,
-        spaceBetween: 40,
       },
-      1024: { slidesPerView: 2, spaceBetween: 20 },
     },
-
-    loop: true,
   });
 };

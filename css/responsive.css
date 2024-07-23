@@ -16,7 +16,6 @@
   .header .inner {
     height: 230px;
     padding: 15px 0;
-    background-color: aqua;
   }
   .header-left {
     width: 70%;
@@ -83,6 +82,19 @@
   }
   .books-img img {
     height: auto;
+  }
+  .quick-menu {
+    display: block;
+  }
+  .footer-mobile {
+    display: block;
+  }
+  .even .inner {
+    border-bottom: none;
+  }
+  .footer-menu,
+  .footer-main {
+    display: none;
   }
 }
 @media screen and (max-width: 680px) {

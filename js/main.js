@@ -180,5 +180,21 @@ window.onload = function () {
       },
     },
   });
-  const swEvent = new Swiper(".sw-event", {});
+  const swEvent = new Swiper(".sw-event", {
+    navigation: {
+      nextEl: ".event .sw-next",
+      prevEl: ".event .sw-prev",
+    },
+    slidesPerView: 1.5,
+    spaceBetween: 27,
+    breakpoints: {
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: { slidesPerView: 2, spaceBetween: 20 },
+    },
+
+    loop: true,
+  });
 };

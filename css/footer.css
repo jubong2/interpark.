@@ -65,7 +65,10 @@
   font-size: 13px;
   color: #333;
 }
-.footer-menu-list > li:hover .more-list {
+/* .footer-menu-list > li:hover .more-list {
+  display: block;
+} */
+.footer-menu-list > li.active .more-list {
   display: block;
 }
 /* 하단메인 */
